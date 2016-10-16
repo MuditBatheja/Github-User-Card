@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Github</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+    <div class='details'>
+        <div class="emailAdd">
+            <input type="text" name="login" placeholder="github login" id='login'>
+            <button class='myButton'>Add</button>
+        </div>
+        <div class="sort">
+            <label>Sort by:</label>
+            <button onclick="sorting('name')">Name</button>
+            <button onclick="sorting('location')">Location</button>
+            <button onclick="sorting('followers')">Followers</button>
+        </div>
+        <div class="tiles" id="DocumentResults"></div>
+    </div>
+    <script id="document-template" type="text/x-handlebars-template">
+        {{#each objects}}
+        <div class="tiles2">
+            <a class="boxclose" onclick="cross({{id}})"></a>
+            <div onclick="openInNewTab({{id}})">
+                <img class="someClass" src="{{avatar_url}}">
+                <h4>{{name}}</h4>
+                <p><b>Location:</b> {{location}}</p>
+                <p><b>Followers:</b> {{followers}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</body>
+
+</html>

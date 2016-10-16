@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.emailAdd {
+    display: inline-block;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    height: 70px;
+}
+
+.emailAdd input {
+    vertical-align: middle;
+    height: 40px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 0px 12px;
+}
+
+.emailAdd button {
+    color: #fff;
+    background-color: #3984f5;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 3px;
+}
+
+.details {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sort button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.sort label {
+    font-weight: bold;
+}
+
+.sort button:active,
+.sort button:hover {
+    color: blue;
+}
+
+.tiles {
+    width: 100%;
+}
+
+.tiles2 {
+    width: 20%;
+    float: left;
+}
+
+.tiles2 div {
+    width: 180px;
+    height: auto;
+    float: left;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    padding: 4px;
+    min-height: 330px;
+}
+
+.tiles2 div:hover,
+.tiles2 div:active {
+    border: 1px solid #3984f5;
+}
+
+.tiles2 div img {
+    width: 100%;
+}
+
+a.boxclose {
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: -20px;
+}
+
+.boxclose:before {
+    content: "x";
+}
